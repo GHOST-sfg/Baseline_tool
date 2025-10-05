@@ -126,6 +126,7 @@ Contributions are welcome! Ideas to improve:
 ---
 
 ## License
-MIT — see your project’s chosen license if different.
+
+This project is licensed under the MIT License - see the [License] (License) file for details
 
 
