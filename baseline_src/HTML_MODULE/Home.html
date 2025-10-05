@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <!-- Primary Meta Tags -->
+    <title>Dev Sahayak - Instant Web Feature Compatibility Checker</title>
+    <meta name="description" content="Check if web features are production-ready across all browsers. Get instant Baseline status for CSS, JavaScript, HTML features with detailed browser support data.">
+    <meta name="keywords" content="web development, browser compatibility, feature checker, CSS, JavaScript, HTML, production-ready, Baseline, MDN">
+    <meta name="author" content="Dev Sahayak Team">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://devsahayak.com/">
+    <meta property="og:title" content="Dev Sahayak - Instant Web Feature Compatibility Checker">
+    <meta property="og:description" content="Check if web features are production-ready across all browsers. Get instant Baseline status with detailed browser support.">
+    <meta property="og:image" content="https://devsahayak.com/images/og-image.png">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://devsahayak.com/">
+    <meta property="twitter:title" content="Dev Sahayak - Web Feature Compatibility Checker">
+    <meta property="twitter:description" content="Instant browser compatibility checking for web developers. 500+ features analyzed.">
+    <meta property="twitter:image" content="https://devsahayak.com/images/og-image.png">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://devsahayak.com/">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebApplication",
+        "name": "Dev Sahayak",
+        "description": "Instant web feature compatibility checker for developers",
+        "url": "https://devsahayak.com",
+        "applicationCategory": "DeveloperApplication",
+        "operatingSystem": "Any",
+        "permissions": "browser",
+        "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "USD"
+        }
+    }
+    </script>
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@200..800&family=Caveat:wght@400..700&family=Dancing+Script:wght@400..700&family=Edu+QLD+Hand:wght@400..700&family=LXGW+Marker+Gothic&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="home.css" />
+    <link rel="stylesheet" href="Responsive_Fixes.css">
+
+
+    <!-- ===== FAVICON & SITE THUMBNAIL ===== -->
+<!-- Favicon for browser tabs -->
+<link rel="icon" type="image/x-icon" href="newlogo.ico">
+<link rel="shortcut icon" href="newlogo.ico" type="image/x-icon">
+
+  </head>
+  <body>
+   
+     <header>
+      <div class="container">
+        <div class="header-content">
+          <a href="home.html" class="logo">Dev<span>Sahayak</span></a>
+          
+          <!-- Desktop Navigation -->
+          <nav class="desktop-nav">
+            <ul>
+              <li><a href="home.html" class="active">Home</a></li>
+              <li><a href="checker.html" id="checkerLink">Checker</a></li>
+              <li><a href="about.html">About</a></li>
+            </ul>
+          </nav>
+          
+          <!-- Mobile Navigation Toggle -->
+          <button class="mobile-nav-toggle" id="mobileNavToggle">☰</button>
+          
+          <!-- Mobile Navigation -->
+          <nav class="mobile-nav" id="mobileNav">
+            <ul>
+              <li><a href="home.html" class="active">Home</a></li>
+            
+              <li><a href="checker.html" id="mobileCheckerLink">Checker</a></li>
+              <li><a href="about.html">About</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+
+
+      <!-- Structured Data for SEO -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication", 
+  "name": "Dev Sahayak",
+  "description": "Instant web feature compatibility checker for developers",
+  "url": "https://your-site.netlify.app",
+  "applicationCategory": "DeveloperApplication"
+}
+</script>
+
+    </header>
+
+    <!-- Main Page -->
+    <main class="main-content">
+      <!-- hero Banner -->
+      <section class="hero">
+        <h1>Know Instantly If Web Features Are Production-Ready</h1>
+        <p>Stop searching multiple sites. Get Baseline status in seconds.</p>
+        <div class="search-box">
+          <input type="text" class="search-input" id="homeSearchInput" placeholder="Type a feature like 'css Layout' or 'array.at()'...">
+          <button class="search-btn" id="homeSearchBtn">Search Features</button>
+          <div class="search-examples">
+            Try: <strong class="search-example">css grid</strong> • <strong class="search-example">fetch api</strong> • <strong class="search-example">web components</strong>
+          </div>
+        </div>
+      </section>
+
+      <!-- features section -->
+      <section class="features">
+        <div class="container-feature">
+          <h2 class="section-title">How Dev Sahayak Helps You</h2>
+          <div class="features-grid">
+            <div class="feature-card">
+              <div class="feature-icon">🔍</div>
+              <h3>Instant Checks</h3>
+              <p>Get immediate answers about any web feature's production readiness.</p>
+            </div>
+            <div class="feature-card">
+              <div class="feature-icon">🚀</div>
+              <h3>Production-Ready Features</h3>
+              <p>Discover which features are safe to use across all major browsers.</p>
+            </div>
+            <div class="feature-card">
+              <div class="feature-icon">📊</div>
+              <h3>Browser Support Data</h3>
+              <p>Detailed browser compatibility information for informed decisions.</p>
+            </div>
+            <div class="feature-card">
+              <div class="feature-icon">🛠️</div>
+              <h3>Tool Integration Ready</h3>
+              <p>Designed to work with linters, IDEs, and other developer tools.</p>
+            </div>
+            <div class="feature-card">
+              <div class="feature-icon">📚</div>
+              <h3>MDN Integration</h3>
+              <p>Direct links to MDN documentation for deeper learning.</p>
+            </div>
+            <div class="feature-card">
+              <div class="feature-icon">⚡</div>
+              <h3>Fast Search</h3>
+              <p>Quickly find features with intelligent search and filtering.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- footer -->
+    <footer>
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-column">
+            <h3>Product</h3>
+            <ul>
+              <li><a href="Home.html">Home</a></li>
+              <li><a href="checker.html">Checker</a></li>
+              <li><a href="About.html">About</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h3>Resources</h3>
+            <ul>
+              <li><a href=" https://share.google/dBhmHNPT0PZYvzuri">MDN Web Docs</a></li>
+              <li><a href="Home.html">Dev Sahayak</a></li>
+              <li><a href="#">GitHub Repo</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h3>Community</h3>
+            <ul>
+              <li><a href="#">GitHub</a></li>
+              <li><a href="About.html">Hackathon</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h3>Connect</h3>
+            <ul>
+              <li><a href="#">Twitter</a></li>
+              <li><a href="https://share.google/SNQ9RXDVrYMq7IQ19">Devpost</a></li>
+              <li><a href="mailto:jaiswalvicky172005@gmail.com">Email</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>Built to solve Dev's Issue • © 2025  Dev Sahayak </p>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      // Mobile Navigation Toggle
+      const mobileNavToggle = document.getElementById('mobileNavToggle');
+      const mobileNav = document.getElementById('mobileNav');
+      const homeSearchInput = document.getElementById('homeSearchInput');
+      const homeSearchBtn = document.getElementById('homeSearchBtn');
+      const searchExamples = document.querySelectorAll('.search-example');
+      
+      mobileNavToggle.addEventListener('click', () => {
+        mobileNav.classList.toggle('active');
+        mobileNavToggle.textContent = mobileNav.classList.contains('active') ? '✕' : '☰';
+      });
+      
+      // Close mobile nav when clicking outside
+      document.addEventListener('click', (e) => {
+        if (!mobileNav.contains(e.target) && !mobileNavToggle.contains(e.target)) {
+          mobileNav.classList.remove('active');
+          mobileNavToggle.textContent = '☰';
+        }
+      });
+      
+      // Redirect to checker page with search text and scroll to results
+      function redirectToCheckerWithSearch(searchText) {
+        if (!searchText.trim()) {
+          alert('Please enter a feature to search');
+          return;
+        }
+        
+        // Store the search text in localStorage to use on checker page
+        localStorage.setItem('searchQuery', searchText);
+        // Also store a flag to indicate we should scroll to results
+        localStorage.setItem('shouldScrollToResults', 'true');
+        
+        // Redirect to checker page
+        window.location.href = 'cheacker.html';
+      }
+      
+      // Handle search button click
+      if (homeSearchBtn) {
+        homeSearchBtn.addEventListener('click', function() {
+          const searchText = homeSearchInput.value.trim();
+          redirectToCheckerWithSearch(searchText);
+        });
+      }
+      
+      // Handle Enter key in search input
+      if (homeSearchInput) {
+        homeSearchInput.addEventListener('keypress', function(e) {
+          if (e.key === 'Enter') {
+            const searchText = homeSearchInput.value.trim();
+            redirectToCheckerWithSearch(searchText);
+          }
+        });
+      }
+      
+      // Handle search example clicks
+      searchExamples.forEach(example => {
+        example.addEventListener('click', function() {
+          const searchText = this.textContent;
+          homeSearchInput.value = searchText;
+          redirectToCheckerWithSearch(searchText);
+        });
+      });
+      
+      // Handle checker page navigation
+      const checkerLink = document.getElementById('checkerLink');
+      const mobileCheckerLink = document.getElementById('mobileCheckerLink');
+      
+      if (checkerLink) {
+        checkerLink.addEventListener('click', function(e) {
+          e.preventDefault();
+          
+          // Clear any previous search when navigating directly
+          localStorage.removeItem('searchQuery');
+          localStorage.removeItem('shouldScrollToResults');
+          
+          window.location.href = 'cheacker.html';
+        });
+      }
+      
+      if (mobileCheckerLink) {
+        mobileCheckerLink.addEventListener('click', function(e) {
+          e.preventDefault();
+          
+          // Clear any previous search when navigating directly
+          localStorage.removeItem('searchQuery');
+          localStorage.removeItem('shouldScrollToResults');
+          
+          window.location.href = 'cheacker.html';
+        });
+      }
+      
+      // Scroll Animation for Feature Cards
+      const featureCards = document.querySelectorAll('.feature-card');
+      
+      function checkScroll() {
+        featureCards.forEach(card => {
+          const cardTop = card.getBoundingClientRect().top;
+          const windowHeight = window.innerHeight;
+          
+          // If card is in viewport
+          if (cardTop < windowHeight - 100) {
+            card.classList.add('visible');
+          }
+        });
+      }
+      
+      // Initial check on page load
+      window.addEventListener('load', checkScroll);
+      
+      // Check on scroll
+      window.addEventListener('scroll', checkScroll);
+    </script>
+  </body>
+</html>
