@@ -2,6 +2,8 @@
 
 Dev Sahayak is a website that helps developers instantly check whether a web platform feature (CSS/JS/HTML/API) is production‑ready across major browsers using Baseline-style status and simple browser support summaries. It’s designed for quick lookups, clear status signals, and links to documentation so you can make fast, confident decisions while building.
 
+---
+
 ## The Problem We Solve
 Web developers waste countless hours researching browser compatibility across multiple sites like MDN, Can I Use, and Baseline. This context switching kills productivity and creates uncertainty about which features are truly production-ready.
 
