@@ -2,18 +2,29 @@
 
 Dev Sahayak is a website that helps developers instantly check whether a web platform feature (CSS/JS/HTML/API) is production‑ready across major browsers using Baseline-style status and simple browser support summaries. It’s designed for quick lookups, clear status signals, and links to documentation so you can make fast, confident decisions while building.
 
-### Why this exists
-- Baseline makes it easier to know if a feature is broadly supported. This site brings that guidance into a lightweight checker UI so you can search a feature, see its status at a glance, and dig into browser support details when needed without any hassles of searching on different websites and reading through large dataset entries for feature checking.
+## The Problem We Solve
+Web developers waste countless hours researching browser compatibility across multiple sites like MDN, Can I Use, and Baseline. This context switching kills productivity and creates uncertainty about which features are truly production-ready.
+
+Dev Sahayak provides instant, authoritative answers in a single interface, powered by Baseline data and designed for developer workflows.
 
 ---
 
 ## Features
-- Instant search from the Home page with deep-link handoff to the Checker
-- Baseline-style status per feature: Widely Available, Limited Support, Not Supported
-- Per‑browser support summary (Chrome, Firefox, Safari, Edge) with versions and notes
-- Single feature view and category results (e.g., search "css", "javascript")
-- Details modal with expanded support info and documentation links (MDN, etc.)
-- Responsive UI with semantic HTML and SEO meta tags (Open Graph, canonical)
+🔍 Instant Compatibility Checks - Get immediate answers about any web feature
+📊 500+ Features Database - Comprehensive coverage of CSS, JavaScript, HTML, and APIs
+🌐 Browser Support Data - Detailed Chrome, Firefox, Safari, Edge compatibility
+📱 Mobile Responsive - Works perfectly on all devices
+⚡ Fast Search - Intelligent search with real-time results
+🔗 MDN Integration - Direct links to official documentation
+
+---
+
+
+## Innovation Highlights
+🔍 Search-First Design: Unlike existing tools that require navigation, we put search front and center
+🎯 Smart Result Display: Single feature vs category detection with optimized layouts
+⚡ Zero Build Process: Pure client-side implementation for instant deployment
+📱 Progressive Enhancement: Works without JavaScript with enhanced experience with it
 
 ---
 
@@ -71,24 +82,15 @@ Loader path in `SCRIPT_MODULE/script.js`:
 
 ---
 
-## Running locally
+## 🏃 Run Locally
 
-Because the site loads JSON via `fetch`, you should run it from a local web server (not via file://).
-
-Option 1 — Quick Python server (if Python is installed):
-```bash
-cd baseline_src
-python -m http.server 8080
-```
-Then open `http://localhost:8080/HTML_MODULE/Home.html`.
-
-Option 2 — Node http-server (if Node is installed):
-```bash
-npx http-server -p 8080 .
-```
-Then open `http://localhost:8080/HTML_MODULE/Home.html`.
-
-Windows PowerShell users can run the same commands in PowerShell. Ensure the JSON path requested by `SCRIPT_MODULE/script.js` is reachable under the server root.
+- ```bash
+# Clone the repository
+- git clone https://github.com/your-username/dev-sahayak.git
+# Navigate to project directory
+- cd dev-sahayak
+# Open in browser (no build process needed!)
+- open Home.html
 
 ---
 
@@ -100,28 +102,26 @@ Windows PowerShell users can run the same commands in PowerShell. Ensure the JSO
 
 ---
 
-## Technology stack
-- HTML5 (semantic structure, SEO meta, Open Graph, JSON‑LD)
-- CSS3 (responsive layout, grid‑based results, animation hooks)
-- JavaScript (search, filtering, rendering, modal, notifications)
-- JSON dataset for feature compatibility
+## Hackathon Project
+- Built for the Baseline Tooling Hackathon to demonstrate how Baseline data can be integrated into developer tools to accelerate modern web feature adoption.
 
 ---
 
-## SEO and accessibility highlights
-- Descriptive titles, meta descriptions, canonical links, Open Graph tags, robots.txt
-- JSON‑LD `WebApplication` metadata on the Home page
-- Keyboard‑friendly UI elements and focusable buttons
-- Clear status labels and emojis to improve scannability
-
+## Future Roadmap
+- Real-time Baseline API integration
+- Browser extension for development workflows
+- IDE plugins (VS Code, WebStorm)
+- CI/CD integration for automated compatibility checks
+- Advanced filtering by browser, usage, and complexity
 
 ---
 
 ## Contributing
-Contributions are welcome! Ideas to improve:
-- Expand/refresh the dataset and add more precise version metadata
-- Persist deep links (URL query for search) for sharable results
-- Add service worker for offline dataset caching
+- We welcome contributions! Areas of interest:
+- Expand feature database with more precise metadata
+- Add deep linking with URL search parameters
+- Implement service worker for offline functionality
+- Enhance accessibility with screen reader optimization
 
 ---
 
